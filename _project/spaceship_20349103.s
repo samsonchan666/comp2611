@@ -1,6 +1,6 @@
 #Name: Chan Nok Hin
 #ID: 20349103
-#Email: nhchana@conncct.ust.hk
+#Email: nhchanaa@connect.ust.hk
 #Lab Section: LA3
 #Bonus Yes
 
