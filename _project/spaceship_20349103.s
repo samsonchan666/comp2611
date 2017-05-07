@@ -500,11 +500,9 @@ collidedBombAero:
 	add $t2, $t0, $t2	#aerolites
 	add $t3, $t1, $t3
 	
-	addi $a0, $a0, 1
 	slt $t5, $a0, $t0	#check x
 	beq $t5 $zero, count1
 
-	addi $a1, $a1, 1
 	slt $t5, $a1, $t1	#check y
 	beq $t5, $zero, count2	
 
@@ -517,11 +515,9 @@ collidedBombAero:
 	j checkLoop2
 		
 count1:
-	addi $a2, $a2, -1
 	slt $t5, $t2, $a2
 	beq $t5, $zero, fullcollide
 
-	addi $a1, $a1, 1
 	slt $t5, $a1, $t1	#check y
 	beq $t5, $zero, count2	
 	
@@ -534,7 +530,6 @@ count1:
 	j checkLoop2	
 
 count2:
-	addi $a3, $a3, -1
 	slt $t5, $t3, $a3
 	beq $t5, $zero, fullcollide
 
